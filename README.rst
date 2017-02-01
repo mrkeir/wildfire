@@ -71,3 +71,11 @@ Setup notes
     node_modules/
 
     git add .gitignore README.md wf-app
+
+9. get the reactjs devtools for Chrome. Debugging on Chrome is likely to be
+   less hassle than Safari, or the browser formerly known as IE.
+   Get the React Development Tools extension on the Chrome web store.
+
+   Once the devtools are installed you can inspect the running app in the usual
+   way (Cmd-alt-I on a Mac, or by mouse abuse), and find a new React tab at
+   the end of the menu that start Elements Console...
