@@ -26,7 +26,8 @@ Experiment to visualise a tinderbox document on a webpage using reactjs.
 7. after creating the new react app, expect to see a message like:
 
 ---
-Success! Created wf-app at /Users/keirr/Documents/wildfire/wf-app
+
+```Success! Created wf-app at /Users/keirr/Documents/wildfire/wf-app
 Inside that directory, you can run several commands:
 
   npm start
@@ -46,7 +47,7 @@ We suggest that you begin by typing:
 
   cd wf-app
   npm start
-
+```
 ---
 
 And check that you can start the development server.
