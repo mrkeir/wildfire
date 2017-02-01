@@ -46,4 +46,15 @@ We suggest that you begin by typing:
 
   cd wf-app
   npm start
+
 ---
+
+And check that you can start the development server.
+
+8. check in the files, but first create a .gitignore file to ignore the
+   node_modules cruft.
+
+   base1:wildfire keirr$ cat .gitignore
+   node_modules/
+
+   git add .gitignore README.md wf-app
