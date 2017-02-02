@@ -1,8 +1,12 @@
+.. _Tinderbox: http://www.eastgate.com/Tinderbox/
+.. _ReactJS: https://facebook.github.io/react/
+.. _Wildfire: https://github.com/mrkeir/wildfire
+
 ========
 Wildfire
 ========
 
-  Experiment to visualise a tinderbox document on a webpage using reactjs.
+  Experiment to visualise a Tinderbox_ document on a webpage using ReactJS_.
 
 Setup notes
 -----------
@@ -79,3 +83,31 @@ Setup notes
    Once the devtools are installed you can inspect the running app in the usual
    way (Cmd-alt-I on a Mac, or by mouse abuse), and find a new React tab at
    the end of the menu that start Elements Console...
+
+
+The Big Idea
+------------
+
+Tinderbox_ is built around the concept of a note - which has content, attributes,
+and links to other notes.  Notes may be nested. Notes can appear in more than
+one place as aliases (similar to symlinks on a Unix filesystem).
+Notes can also be active (agents) and templates (prototypes), but for this
+project I want to visualise the content of a Tinderbox_ document on a webpage,
+not recreate the application in its entirety.
+
+Tinderbox_ provides an export feature for which one can define export templates
+to control the output. Tinderbox_ saves its documents in XML, although I'm not
+aware of any public definition of the structure.
+
+I considered using the XML as the input into Wildfire_, but the advantages
+of using an export template are compelling. Much of the complexity of Tinderbox_
+can be removed with an export template, saving early versions of Wildfire_ from
+having to deal with (i.e. ignore) advanced Tinderbox_ features.
+
+
+The First Step
+--------------
+
+I'll need a Tinderbox_ document, starting with one note. Then create an export
+template to render JSON for that note. Tinderbox_ notes have a host of
+properties, but for now I'll simple export the name (title) and text (content).
